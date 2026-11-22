@@ -4,7 +4,7 @@
 
 A live quiz web app I built for Alsancak Gençlik Merkezi, a youth centre in İzmir. The quiz runs on the projector; players answer on their own phones, with no app and no account.
 
-<img src="media/lead.webp" width="100%" alt="The projector screen during a game: a question is read, answers come in, the right one is revealed, the leaderboard moves, the podium rises">
+<img src="media/lead-en.webp" width="100%" alt="The projector screen during a game: a question is read, answers come in, the right one is revealed, the leaderboard moves, the podium rises">
 
 <p align="center"><sub>One question and the podium on the projector, recorded from a local run with bot players.</sub></p>
 
@@ -23,7 +23,7 @@ The design sits between plain government white and a children's game: fun but no
 
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="media/headings/n02-dark.png"><img src="media/headings/n02-light.png" height="22" alt=""></picture> How it is built
 
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="media/diagram-dark.png"><img src="media/diagram-light.png" width="600" alt="Projector, phones and panel talk to the Worker; the Worker reaches the game room, the gate and D1; the game room writes results to D1"></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="media/diagram-en-dark.png"><img src="media/diagram-en-light.png" width="600" alt="Projector, phones and panel talk to the Worker; the Worker reaches the game room, the gate and D1; the game room writes results to D1"></picture></p>
 
 - **Projector, phones, panel:** one static React site on Cloudflare Pages.
 - **Worker:** the API, and the way in for each WebSocket.
@@ -49,15 +49,15 @@ The design sits between plain government white and a children's game: fun but no
 
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="media/headings/n04-dark.png"><img src="media/headings/n04-light.png" height="22" alt=""></picture> Screens
 
-<img src="media/screens/lobby.webp" width="100%" alt="The lobby on the projector: a QR code, the PIN, the quiz name and the nicknames of the players who have joined">
+<img src="media/screens/lobby-en.webp" width="100%" alt="The lobby on the projector: a QR code, the PIN, the quiz name and the nicknames of the players who have joined">
 
 The lobby on the projector: QR code, PIN, and the names as players join.
 
-<img src="media/screens/phones.webp" width="100%" alt="Three phone screens: the start page with the centre's logo and the PIN field, the four coloured answer keys, and a green 'Doğru! +918' for a right answer">
+<img src="media/screens/phones-en.webp" width="100%" alt="Three phone screens: the start page with the centre's logo and the PIN field, the four coloured answer keys, and a green 'Correct! +918' for a right answer">
 
 On the phone: joining, the answer keys, a right answer.
 
-<img src="media/screens/panel.webp" width="100%" alt="The staff panel on a phone, editing a question and showing a game's results with PDF and Excel buttons, and the PDF result sheet with the centre's logo">
+<img src="media/screens/panel-en.webp" width="100%" alt="The staff panel on a phone, editing a question and showing a game's results with PDF and Excel buttons, and the PDF result sheet with the centre's logo">
 
 The staff panel on a phone, editing a question and reading a game's results, and the PDF result sheet.
 
@@ -80,7 +80,9 @@ The source code is private. This repository documents the product: the page, its
 
 Alsancak Gençlik Merkezi için geliştirdiğim canlı bilgi yarışması. Yarışma projeksiyonda akar, oyuncular kendi telefonlarından cevap verir; uygulama kurmak da hesap açmak da gerekmez.
 
-<sub>En üstteki döngü: projeksiyonda bir soru ve kürsü, botlarla oynanan yerel bir oyundan kaydedildi.</sub>
+<img src="media/lead-tr.webp" width="100%" alt="Bir oyun sırasında projeksiyon ekranı: soru okunur, cevaplar gelir, doğrusu açıklanır, sıralama kıpırdar, kürsü yükselir">
+
+<p align="center"><sub>Projeksiyonda bir soru ve kürsü, botlarla oynanan yerel bir oyundan kaydedildi.</sub></p>
 
 Merkez sık sık yarışma düzenliyor ve bunun için Kahoot! kullanıyordu. Bu uygulama onun yerini Cloudflare'in ücretsiz katmanında almak için yapıldı ve geçmesi gereken tek bir sınav var: hiçbir oyuncu "Kahoot! varken bu ne böyle" dememeli. Ücretsiz olmak mühendislikle karşılanan bir kısıt; öğrenciye daha azını vermenin gerekçesi değil.
 
@@ -97,12 +99,12 @@ Tasarım, devlet beyazının sadeliğiyle çocuk oyunu havası arasında duruyor
 
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="media/headings/n02-dark.png"><img src="media/headings/n02-light.png" height="22" alt=""></picture> Nasıl kuruldu
 
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="media/diagram-dark.png"><img src="media/diagram-light.png" width="600" alt="Projeksiyon, telefonlar ve panel Worker'la konuşur; Worker oyun odasına, kapıya ve D1'e ulaşır; oyun odası sonuçları D1'e yazar"></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="media/diagram-tr-dark.png"><img src="media/diagram-tr-light.png" width="600" alt="Projeksiyon, telefonlar ve panel Worker'la konuşur; Worker oyun odasına, kapıya ve D1'e ulaşır; oyun odası sonuçları D1'e yazar"></picture></p>
 
 - **Projeksiyon, telefonlar, panel:** Cloudflare Pages'te tek bir statik React sitesi.
 - **Worker:** API ve her WebSocket'in giriş kapısı.
-- **Oyun odası (Game room):** her canlı oyun için bir Durable Object, oyunun tek doğru kaynağı. Saat, puan ve sıralama onda durur; doğru cevap açıklanmadan hiçbir telefona gitmez. WebSocket'leri hibernasyonlu, yani sessizce bekleyen bir oda hiçbir şeye mal olmaz.
-- **Kapı (Gate):** PIN'leri oyun odalarına bağlayan ve personel girişini koruyan tek bir Durable Object.
+- **Oyun odası:** her canlı oyun için bir Durable Object, oyunun tek doğru kaynağı. Saat, puan ve sıralama onda durur; doğru cevap açıklanmadan hiçbir telefona gitmez. WebSocket'leri hibernasyonlu, yani sessizce bekleyen bir oda hiçbir şeye mal olmaz.
+- **Kapı:** PIN'leri oyun odalarına bağlayan ve personel girişini koruyan tek bir Durable Object.
 - **D1:** yarışmalar ve sonuçlar. Bir Durable Object'in deposunda değil SQL'de dururlar; böylece yedek için dışarıdan okunabilirler ve yedi günlük geçmişleri saklanır. Biten her oyun yarışmanın kendi kopyasını tutar, yarışma sonradan düzenlense de eski sonuç değişmez.
 
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="media/headings/n03-dark.png"><img src="media/headings/n03-light.png" height="22" alt=""></picture> Ölçülenler
@@ -123,15 +125,15 @@ Tasarım, devlet beyazının sadeliğiyle çocuk oyunu havası arasında duruyor
 
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="media/headings/n04-dark.png"><img src="media/headings/n04-light.png" height="22" alt=""></picture> Ekranlar
 
-<img src="media/screens/lobby.webp" width="100%" alt="Projeksiyonda lobi: QR kod, PIN, yarışmanın adı ve katılan oyuncuların takma adları">
+<img src="media/screens/lobby-tr.webp" width="100%" alt="Projeksiyonda lobi: QR kod, PIN, yarışmanın adı ve katılan oyuncuların takma adları">
 
 Projeksiyonda lobi: QR kod, PIN ve katıldıkça beliren adlar.
 
-<img src="media/screens/phones.webp" width="100%" alt="Üç telefon ekranı: merkezin logosu ve PIN alanıyla giriş sayfası, dört renkli cevap tuşu ve doğru cevapta yeşil 'Doğru! +918'">
+<img src="media/screens/phones-tr.webp" width="100%" alt="Üç telefon ekranı: merkezin logosu ve PIN alanıyla giriş sayfası, dört renkli cevap tuşu ve doğru cevapta yeşil 'Doğru! +918'">
 
 Telefonda: katılış, cevap tuşları, doğru bir cevap.
 
-<img src="media/screens/panel.webp" width="100%" alt="Telefonda personel paneli: bir soruyu düzenlerken ve PDF ile Excel düğmeleriyle bir oyunun sonuçları; yanında merkezin logolu PDF sonuç belgesi">
+<img src="media/screens/panel-tr.webp" width="100%" alt="Telefonda personel paneli: bir soruyu düzenlerken ve PDF ile Excel düğmeleriyle bir oyunun sonuçları; yanında merkezin logolu PDF sonuç belgesi">
 
 Telefonda personel paneli, soru düzenlerken ve bir oyunun sonuçlarında; yanında PDF sonuç belgesi.
 
