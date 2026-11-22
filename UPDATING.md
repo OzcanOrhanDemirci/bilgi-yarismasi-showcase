@@ -40,7 +40,7 @@ own `scripts/morning-game.py` with the output paths and nicknames changed) and
 `yerel/panelphone.py` (the staff panel at phone size), their English copies
 `drive-en.py` and `panelphone-en.py` (English locale, labels and quiz), and
 `seed-local.mjs` (the app's seed script taking a quiz file and a state folder). They talk
-to the app's local dev server and carry its local dev password, so they stay out of git.
+to the app's local dev server and stay out of git.
 To shoot again: start the app's dev servers locally, seed the quiz, run the two scripts of
 that language, turn page 1 of the downloaded PDF into `pdf-1.png` (130 dpi), copy the
 results into `yerel/` or `yerel/en/`, find the same beats in the new recording for
@@ -55,7 +55,7 @@ results into `yerel/` or `yerel/en/`, find the same beats in the new recording f
   The Turkish set sits inside the collapsed section.
 - What never goes on this page: the live address, names of the app's Cloudflare
   resources or their IDs, daily limits and caps, password details beyond "one shared
-  staff password with an owner override", the deploy guard, known small issues, real
+  staff password with an owner override", deployment details, known small issues, real
   people's names, anything about the shared Cloudflare account or other projects on it.
 
 ## Rules that hold
