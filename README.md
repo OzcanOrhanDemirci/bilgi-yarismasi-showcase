@@ -8,7 +8,7 @@ A live quiz web app I built for Alsancak Gençlik Merkezi, a youth centre in İz
 
 <p align="center"><sub>One question and the podium on the projector, recorded from a local run with bot players.</sub></p>
 
-The centre runs quizzes often and used Kahoot for them. This app replaces it, on Cloudflare's free tier, and it has one test to pass: no player should come away thinking "this is worse than Kahoot". Free is a constraint to engineer around, never a reason to give students less.
+The centre runs quizzes often and used Kahoot! for them. This app is built to take its place, on Cloudflare's free tier, and it has one test to pass: no player should come away thinking "this is worse than Kahoot!". Free is a constraint to engineer around, never a reason to give students less.
 
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="media/headings/n01-dark.png"><img src="media/headings/n01-light.png" height="22" alt=""></picture> What it does
 
@@ -19,7 +19,7 @@ The centre runs quizzes often and used Kahoot for them. This app replaces it, on
 - A staff panel to prepare and store quizzes, run them and read results, behind one shared staff password with an owner override. Results stay available and export as an official PDF or Excel sheet with the centre's logo.
 - Turkish and English throughout; the interface follows the device's language and can be switched.
 
-The design sits between plain government white and Kahoot's childishness: fun but not silly, mature but not bureaucratic. Motion carries the fun more than colour does: warm white, dark navy type, and colour spent on the answers, the scores and the celebration. Every screen is drawn for a cheap 1080p projector in a lit room.
+The design sits between plain government white and a children's game: fun but not silly, mature but not bureaucratic. Motion carries the fun more than colour does: warm white, dark navy type, and colour spent on the answers, the scores and the celebration. Every screen is drawn for a cheap 1080p projector in a lit room.
 
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="media/headings/n02-dark.png"><img src="media/headings/n02-light.png" height="22" alt=""></picture> How it is built
 
@@ -82,7 +82,7 @@ Alsancak Gençlik Merkezi için geliştirdiğim canlı bilgi yarışması. Yarı
 
 <sub>En üstteki döngü: projeksiyonda bir soru ve kürsü, botlarla oynanan yerel bir oyundan kaydedildi.</sub>
 
-Merkez sık sık yarışma düzenliyor ve bunun için Kahoot kullanıyordu. Bu uygulama onun yerini Cloudflare'in ücretsiz katmanında alıyor ve geçmesi gereken tek bir sınav var: hiçbir oyuncu "Kahoot varken bu ne böyle" dememeli. Ücretsiz olmak mühendislikle karşılanan bir kısıt; öğrenciye daha azını vermenin gerekçesi değil.
+Merkez sık sık yarışma düzenliyor ve bunun için Kahoot! kullanıyordu. Bu uygulama onun yerini Cloudflare'in ücretsiz katmanında almak için yapıldı ve geçmesi gereken tek bir sınav var: hiçbir oyuncu "Kahoot! varken bu ne böyle" dememeli. Ücretsiz olmak mühendislikle karşılanan bir kısıt; öğrenciye daha azını vermenin gerekçesi değil.
 
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="media/headings/n01-dark.png"><img src="media/headings/n01-light.png" height="22" alt=""></picture> Ne yapar
 
@@ -93,7 +93,7 @@ Merkez sık sık yarışma düzenliyor ve bunun için Kahoot kullanıyordu. Bu u
 - Yarışmaları hazırlamak, saklamak, başlatmak ve sonuçları okumak için bir personel paneli: personelin bildiği tek ortak şifre, yanında sahibin şifresi. Sonuçlar hep erişilebilir kalır ve merkezin logosuyla resmî bir PDF ya da Excel olarak iner.
 - Baştan sona Türkçe ve İngilizce; arayüz cihazın dilini izler, istenirse değiştirilir.
 
-Tasarım, devlet beyazının sadeliğiyle Kahoot'un çocuksuluğu arasında duruyor: eğlenceli ama cıvık değil, olgun ama kasıntı değil. Eğlenceyi renkten çok hareket taşıyor: sıcak beyaz zemin, koyu lacivert yazı; renk cevaplara, puanlara ve kutlamaya harcanıyor. Her ekran ışıklı bir odadaki ucuz bir 1080p projeksiyon için çizildi.
+Tasarım, devlet beyazının sadeliğiyle çocuk oyunu havası arasında duruyor: eğlenceli ama cıvık değil, olgun ama kasıntı değil. Eğlenceyi renkten çok hareket taşıyor: sıcak beyaz zemin, koyu lacivert yazı; renk cevaplara, puanlara ve kutlamaya harcanıyor. Her ekran ışıklı bir odadaki ucuz bir 1080p projeksiyon için çizildi.
 
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="media/headings/n02-dark.png"><img src="media/headings/n02-light.png" height="22" alt=""></picture> Nasıl kuruldu
 
@@ -149,4 +149,4 @@ Kaynak kodu paylaşılmıyor; bu depo ürünü belgeler: sayfa, görselleri ve o
 
 <br>
 
-<sub>The Alsancak Gençlik Merkezi logo seen in the app's screens belongs to Alsancak Gençlik Merkezi; it is shown because the app was built for the centre. Kahoot! is a trademark of Kahoot! ASA. Other names and logos belong to their owners.<br>© 2026 Özcan Orhan Demirci. All rights reserved.</sub>
+<sub>The Alsancak Gençlik Merkezi logo seen in the app's screens belongs to Alsancak Gençlik Merkezi; it is shown because the app was built for the centre. Kahoot! is a trademark of Kahoot! ASA; this project is not affiliated with or endorsed by it. Other names and logos belong to their owners.<br>© 2026 Özcan Orhan Demirci. All rights reserved.</sub>
